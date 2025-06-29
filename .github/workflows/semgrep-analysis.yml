@@ -11,6 +11,11 @@ jobs:
     name: Run Semgrep via Docker
     runs-on: self-hosted
 
+    permissions:
+      actions: read
+      contents: read
+      security-events: write  # nécessaire pour publier les résultats dans l'onglet "Security"
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
