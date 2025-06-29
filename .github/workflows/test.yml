@@ -11,7 +11,7 @@ on:
 jobs:
   analyze:
     name: Analyze code with CodeQL
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     permissions:
       actions: read
